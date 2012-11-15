@@ -59,15 +59,15 @@ module Jekyll
 
       @config = Jekyll.configuration({})['dribbble_set'] || {}
 
-      @user                      = /(?<=user:)\w+/.match(config)[0]
+      # @user                      = /(?<=user:)\w+/.match(config)[0]
       @user                      ||= @config['user']
       @user                      ||= 'ericdfields'
 
-      @shots_per_page            = /(?<=shots_per_page:)\w+/.match(config)[0]
+      # @shots_per_page            = /(?<=shots_per_page:)\w+/.match(config)[0]
       @shots_per_page            ||= @config['shots_per_page']
       @shots_per_page            ||= 15 # max 30
 
-      @page                      = /(?!page:)\d+(?=\spage)/.match(config)[0]
+      # @page                      = /(?!page:)\d+(?=\spage)/.match(config)[0]
       @page                      ||= @config['page']
       @page                      ||= 1
 

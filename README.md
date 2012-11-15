@@ -7,21 +7,23 @@ IMPORTANT: You must comply with the [Terms of Use of the Dribbble API](http://dr
 
 ---
 
-## Usage:
+## Usage: ##
 
-    {% dribble_set user:username shots_per_page:# page:# %}
+    {% dribble_set %}
 
-### Example:
+* Two examples below DO NOT WORK for now, but will be fixed in the future. Plugin will only read from CONFIG for now. *
+
+### Example: ###
 
     {% dribble_set user:ericdfields shots_per_page:10 page:2 %}
 
-### All paramaters are optional, e.g.:
+### All paramaters are optional, e.g.: ###
 
     {% dribble_set shots_per_page:10 page:3 %}
 
 --- 
 
-## Default Configuration (override in _config.yml):
+## Default Configuration (override in _config.yml): ##
 
     dribbble_set:
       user:            'ericdfields'
@@ -45,19 +47,18 @@ setting `full_size` to `true`
 
 ---
 
-## Future Enhancements
+## Future Enhancements ##
 
 Pretty much anything worthwhile we can get out of http://dribbble.com/api
 
 ---
 
-Author: Eric D. Fields
-Site: http://ericdfields.com
-Twitter: @ericdfields
-Email: ericdfields.com
-Plugin Source: http://github.com/ericdfields/Jekyll-Dribbble-Set-Tag
-Plugin License: MIT
+Author: Eric D. Fields &bull; http://ericdfields.com &bull; [@ericdfields](http://twitter.com/ericdfields)
+
+* Plugin Source: http://github.com/ericdfields/Jekyll-Dribbble-Set-Tag
+* Plugin License: MIT
 
 Thanks to Thomas Mango's Flickr plugin for the inspiration:
-Plugin Source: http://github.com/tsmango/jekyll_flickr_set_tag
-Plugin License: MIT
+
+* Plugin Source: http://github.com/tsmango/jekyll_flickr_set_tag
+* Plugin License: MIT
