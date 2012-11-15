@@ -5,15 +5,15 @@
 #
 # Usage:
 #
-#   {% dribble_set user:username shots_per_page:# page:# %}
+#   {% dribbble_set user:username shots_per_page:# page:# %}
 #
 # Example:
 #
-#   {% dribble_set user:ericdfields shots_per_page:10 page:2 %}
+#   {% dribbble_set user:ericdfields shots_per_page:10 page:2 %}
 #
 # All paramaters are optional, e.g.:
 #
-#   {% dribble_set shots_per_page:10 page:3 %}
+#   {% dribbble_set shots_per_page:10 page:3 %}
 #
 # Default Configuration (override in _config.yml):
 #
@@ -67,7 +67,7 @@ module Jekyll
       @shots_per_page            ||= @config['shots_per_page']
       @shots_per_page            ||= 15 # max 30
 
-      @page                      = /(?!page:)\d+(?=\sshots_per_page)/.match(config)[0]
+      @page                      = /(?!page:)\d+(?=\spage)/.match(config)[0]
       @page                      ||= @config['page']
       @page                      ||= 1
 
